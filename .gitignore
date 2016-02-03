@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+*.hot-reload.js
+*.hot-reload.json
+/build
+.idea
+/node_modules
