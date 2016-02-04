@@ -4,8 +4,9 @@
 
 const paths = require('../paths');
 const plugins = require('./plugins');
+const loaders = require('./loaders');
 
-module.exports = function(options) {
+module.exports = function (options) {
     const env = process.env.NODE_ENV;
     let isProduction = false;
     let isTest = false;
@@ -49,5 +50,8 @@ module.exports = function(options) {
         cache: !isProduction,
         devtool: devtool === 'off' ? false : devtool,
         plugins: plugins(),
+        module: {
+            loaders: loaders,
+        },
     };
 };

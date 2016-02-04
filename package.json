@@ -24,7 +24,11 @@
   "author": "keith loy",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.4.5",
     "babel-eslint": "^4.1.8",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
     "chalk": "^1.1.1",
     "cross-env": "^1.0.7",
     "eslint": "^1.8.0",
