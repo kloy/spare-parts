@@ -20,7 +20,7 @@ if (withSourcemap) {
 
 const config = {
     basePath: path.resolve(__dirname, '../..'),
-    frameworks: ['qunit'],
+    frameworks: ['qunit', 'sinon'],
     files: ['lib/test/index.js'],
     reporters: ['mocha'],
     preprocessors: {

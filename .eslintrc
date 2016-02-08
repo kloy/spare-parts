@@ -38,5 +38,8 @@
         "prefer-template": 0,
         "max-len": [1, 120, 4]
     },
-    "globals": {}
+    "globals": {
+      "sinon": true,
+      "QUnit": true
+    }
 }

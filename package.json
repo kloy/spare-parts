@@ -1,5 +1,4 @@
-{
-  "name": "spare-parts",
+{ "name": "spare-parts",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -19,7 +18,8 @@
     "test": "cross-env NODE_ENV=test karma start tools/config/karma.conf.js --log-level debug --single-run --reporter full --sourcemap",
     "test:watch": "cross-env NODE_ENV=test karma start tools/config/karma.conf.js --auto-watch",
     "dist": "cross-env NODE_ENV=production webpack --config tools/config/webpack.config.js --progress --display-error-details",
-    "npm-check-updates": "ncu"
+    "npm-check-updates": "ncu",
+    "docs": "esdoc -c ./tools/config/esdoc.json && http-server build/esdoc -p 9001"
   },
   "author": "keith loy",
   "license": "ISC",
@@ -41,6 +41,7 @@
     "karma-mocha-reporter": "^1.1.1",
     "karma-qunit": "^0.1.9",
     "karma-safari-launcher": "^0.1.1",
+    "karma-sinon": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.6",
     "karma-webpack": "~1.7.0",
     "npm-check-updates": "^2.5.7",
